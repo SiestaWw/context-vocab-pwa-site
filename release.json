@@ -1,0 +1,7 @@
+{
+  "channel": "friends-test",
+  "date": "2026-10-10",
+  "source_commit": "43bb537b0aeba9321a51afd7853dcd182adab144",
+  "default_mode": "live",
+  "features": ["photo-ocr", "spaced-review", "offline-reading", "csv-markdown-export", "article-highlights", "batch-selected-definitions", "fixed-ai-consent"]
+}
