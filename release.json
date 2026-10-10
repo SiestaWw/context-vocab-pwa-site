@@ -1,7 +1,9 @@
 {
   "channel": "friends-test",
-  "date": "2026-10-10",
-  "source_commit": "43bb537b0aeba9321a51afd7853dcd182adab144",
+  "published_date": "2026-10-10",
+  "source_commit": "10d8034295f4686e7534dd285ed3b46fb696fbae",
   "default_mode": "live",
-  "features": ["photo-ocr", "spaced-review", "offline-reading", "csv-markdown-export", "article-highlights", "batch-selected-definitions", "fixed-ai-consent"]
+  "backend_analyze_version": 9,
+  "fixes": ["source-quote-typography-matching", "complete-word-boundaries", "explicit-function-failure-reasons"],
+  "features": ["google-login", "private-vocabulary", "pasted-analysis", "photo-ocr", "article-reading", "batch-selected-meanings", "spaced-review", "offline-reading", "csv-markdown-export"]
 }

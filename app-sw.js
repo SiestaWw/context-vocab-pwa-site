@@ -1,5 +1,5 @@
 /* App-owned worker: static files only. Never cache auth, API responses, or OAuth query strings. */
-const VERSION = "fb4aabb0e9cb24f4";
+const VERSION = "1182d02ae0d44c92";
 const PREFIX = "context-vocab-static:" + new URL(self.registration.scope).pathname + ":";
 const CACHE = PREFIX + VERSION;
 self.addEventListener("install", event => { event.waitUntil((async () => {
