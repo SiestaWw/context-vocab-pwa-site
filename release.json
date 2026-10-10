@@ -1,11 +1,26 @@
 {
   "channel": "friends-test",
   "published_date": "2026-10-10",
-  "source_commit": "78a102bda7e467f24f93dec3a332764097300bd7",
+  "source_commit": "7074f93566034ba8764ced58b78ce2bea935e970",
   "default_mode": "live",
-  "backend_analyze_version": 9,
-  "backend_explain_selections_version": 2,
-  "offline_shell_version": "7c86129429f6c32b",
-  "fixes": ["draft-reader-direct-point-selection", "draft-batch-meaning-union", "single-final-confirmation", "exact-selected-occurrence-focus"],
-  "features": ["google-login", "private-vocabulary", "pasted-analysis", "photo-ocr", "article-reading", "batch-selected-meanings", "spaced-review", "offline-reading", "csv-markdown-export"]
+  "backend_analyze_version": 10,
+  "backend_explain_selections_version": 3,
+  "offline_shell_version": "43d9c46b02c79eea",
+  "fixes": [
+    "anonymous-no-quota-connection-check",
+    "bounded-client-analysis-request",
+    "full-model-response-deadline",
+    "explicit-safe-connection-errors"
+  ],
+  "features": [
+    "google-login",
+    "private-vocabulary",
+    "pasted-article-analysis",
+    "photo-ocr",
+    "article-reading",
+    "batch-context-meanings",
+    "spaced-review",
+    "offline-reading",
+    "export"
+  ]
 }
