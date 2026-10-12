@@ -1,26 +1,37 @@
 {
+  "schema_version": 1,
   "channel": "friends-test",
-  "published_date": "2026-10-10",
-  "source_commit": "7074f93566034ba8764ced58b78ce2bea935e970",
+  "published_date": "2026-10-12",
+  "source_commit": "517300894fda846b53eb4f061256eaca2309ca7d",
   "default_mode": "live",
-  "backend_analyze_version": 10,
-  "backend_explain_selections_version": 3,
-  "offline_shell_version": "43d9c46b02c79eea",
-  "fixes": [
-    "anonymous-no-quota-connection-check",
-    "bounded-client-analysis-request",
-    "full-model-response-deadline",
-    "explicit-safe-connection-errors"
+  "phone_entry": "./?mode=live&view=app",
+  "desktop_demo_entry": "./?mode=prototype&view=preview",
+  "pwa_shell_version": "88d732ebc93cecbe",
+  "backend_changed": false,
+  "changes": [
+    "Native phone display without simulated device chrome",
+    "Real viewport, safe areas and system keyboard integration",
+    "Retained desktop iPhone/Pixel demonstration",
+    "PWA manifest, PNG icons and platform installation guidance",
+    "No forced reload or automatic model retry"
   ],
-  "features": [
-    "google-login",
-    "private-vocabulary",
-    "pasted-article-analysis",
-    "photo-ocr",
-    "article-reading",
-    "batch-context-meanings",
-    "spaced-review",
-    "offline-reading",
-    "export"
-  ]
+  "verification": {
+    "phone_source_ui": {
+      "passed": 30,
+      "skipped": 0
+    },
+    "phone_pages_ui": {
+      "passed": 30,
+      "skipped": 0
+    },
+    "existing_pages_ui": {
+      "passed": 35,
+      "skipped": 3
+    },
+    "desktop_runtime_demo": {
+      "passed": 11
+    },
+    "runtime_protected_files": 31,
+    "physical_device_validation": "pending user phone verification"
+  }
 }
