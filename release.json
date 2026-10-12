@@ -1,37 +1,34 @@
 {
-  "schema_version": 1,
-  "channel": "friends-test",
-  "published_date": "2026-10-12",
-  "source_commit": "517300894fda846b53eb4f061256eaca2309ca7d",
-  "default_mode": "live",
-  "phone_entry": "./?mode=live&view=app",
-  "desktop_demo_entry": "./?mode=prototype&view=preview",
-  "pwa_shell_version": "88d732ebc93cecbe",
-  "backend_changed": false,
-  "changes": [
-    "Native phone display without simulated device chrome",
-    "Real viewport, safe areas and system keyboard integration",
-    "Retained desktop iPhone/Pixel demonstration",
-    "PWA manifest, PNG icons and platform installation guidance",
-    "No forced reload or automatic model retry"
-  ],
+  "product": "ContextVocab",
+  "release": "recoverable-content-2026-10-12",
+  "source_commit": "b502fb734c4bbbe3e7af0376712e1a9c9a988f65",
+  "built_date": "2026-10-12",
+  "mode": "live",
+  "features": {
+    "real_phone_display": true,
+    "pwa_installation": true,
+    "swipe_to_reveal_delete": true,
+    "batch_move_to_trash": true,
+    "independent_restore": true,
+    "single_item_purge_with_confirmation": true,
+    "explicit_operation_recovery": true,
+    "offline_read_only": true,
+    "desktop_demo_preserved": true
+  },
   "verification": {
-    "phone_source_ui": {
-      "passed": 30,
-      "skipped": 0
-    },
-    "phone_pages_ui": {
-      "passed": 30,
-      "skipped": 0
-    },
-    "existing_pages_ui": {
-      "passed": 35,
-      "skipped": 3
-    },
-    "desktop_runtime_demo": {
-      "passed": 11
-    },
-    "runtime_protected_files": 31,
-    "physical_device_validation": "pending user phone verification"
+    "content_source_passed": 48,
+    "content_pages_pwa_passed": 48,
+    "phone_source_passed": 30,
+    "phone_pages_pwa_passed": 30,
+    "legacy_pages_passed": 35,
+    "legacy_pages_expected_skips": 3,
+    "cloud_rollback_assertions": 7,
+    "physical_phone_acceptance": "pending"
+  },
+  "backend": {
+    "migration": "202610120001_recycle_bin.sql",
+    "explain_selections_version": 4,
+    "verify_jwt": true,
+    "existing_credentials_and_admission_unchanged": true
   }
 }
